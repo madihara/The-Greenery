@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 import logo from '../images/cactus.png'
 import title from '../images/title.png'
@@ -27,14 +27,14 @@ const Navigation = styled.nav`
 `
 
 const List = styled.ul`
-  position: fixed;
-  top: 0;
-  right: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  list-style: none;
+  font-size: 0.8rem;
 `
 const Link = styled.li`
-  padding: 0 3px;
+  padding: 3px 10px;
+  margin-left: 10px;
 `
 
 
@@ -47,9 +47,8 @@ const Header = () => {
        <Title src={title} />
        <Navigation>
          <List>
-           <Link>Home</Link>
-           <Link>About</Link>
-           <Link>Subscribe</Link>
+           <Link>Log In</Link>
+           
          </List>
        </Navigation>
     </Head>

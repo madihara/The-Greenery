@@ -25,7 +25,7 @@ const Title = styled.section`
 
 const ArrowBox = styled.a`
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
 `

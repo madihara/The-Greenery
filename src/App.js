@@ -1,16 +1,15 @@
-import React, { Fragment } from 'react';
-import styled from 'styled-components';
+import React from 'react';
 
-import Header from './components/Header'
-import Hero from './components/Hero'
+import HomePage from './pages/HomePage'
+import Layout from './components/Layout'
+
 
 
 function App() {
   return (
-    <Fragment>
-    <Header/>
-    <Hero>We are Plant People</Hero>
-    </Fragment>
+    <Layout>
+      <HomePage/>
+    </Layout>
   );
 }
 
