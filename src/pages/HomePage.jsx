@@ -4,6 +4,7 @@ import Fade from 'react-reveal'
 
 import CardSection from '../components/CardSection'
 import Hero from '../components/Hero'
+import Survey from '../pages/Survey'
 
 const SurveySection = styled.div`
    background: url('https://images.pexels.com/photos/1856422/pexels-photo-1856422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
@@ -21,6 +22,7 @@ const Button = styled.button`
   color: white;
   font-size: 1rem;
   box-shadow: 0 0 4px 1px #848484;
+  cursor: pointer;
 
   &:hover{
     transform: scale(1.05);
@@ -35,6 +37,7 @@ const HomePage=() => {
       <SurveySection>
         <Fade left><Button>Take the survey</Button></Fade>
       </SurveySection>
+      <Survey />
     </Fragment>
   )
 }

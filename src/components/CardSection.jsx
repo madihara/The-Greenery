@@ -35,6 +35,7 @@ const cardsInfo = [
 ]
 
 const Container = styled.section`
+  
 `
 
 
@@ -50,9 +51,10 @@ const CardSection = () => {
   return(
     <Container>
     <Title>How it works</Title>
-      {cardsInfo.map(({title, description, id, flexDirection, textAlign}) => (
+      {cardsInfo.map(({title, description, id, flexDirection, textAlign, index}) => (
         <Card 
         title={title}
+        number={id}
         description={description}
         flexDirection={flexDirection}
         id={id}

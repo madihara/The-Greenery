@@ -28,10 +28,16 @@ const SubTitle = styled.h5`
   font-weight: normal;
   margin: 2px;
   font-size: 10px;
+  cursor: pointer;
 `
 const Icon = styled.a`
   font-size: 24px;
   margin: 0 8px;
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.1)
+  }
 `
 
 const Footer = () => {
@@ -58,7 +64,8 @@ const Footer = () => {
         textAlign: 'right'
       }}>
       <Title>Navigation</Title>
-      <SubTitle>Cart</SubTitle>
+      <SubTitle>Shop Now</SubTitle>
+      <SubTitle>View Your Cart</SubTitle>
       <SubTitle>Take the Survey</SubTitle>
       <SubTitle>Log in</SubTitle>
       </Column>

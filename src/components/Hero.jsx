@@ -28,6 +28,7 @@ const ArrowBox = styled.a`
   left: 50%;
   transform: translate(-50%, -50%);
 `
+
 const Arrow = styled.span`
   display: block;
   width: 20px;

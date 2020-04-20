@@ -27,6 +27,7 @@ const Title = styled.h2`
   font-size: 6rem;
   text-transform: lowercase;
   line-height: 70px;
+  display: relative;
 
   @media screen and (max-width: 900px){
     max-width: none;
@@ -41,7 +42,6 @@ const Description = styled.p`
   @media screen and (max-width: 900px){
     max-width: none;
   }
-
 `
 
 
@@ -56,7 +56,9 @@ const Card = ({ flexDirection, title, description, textAlign}) =>{
       
         <Title style={{
           textAlign: textAlign
-        }}>{title}</Title>
+        }}>
+          {title}
+          </Title>
         <Description>{description}</Description>
     </Container>
     </Fade>

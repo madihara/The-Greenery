@@ -36,13 +36,6 @@ const List = styled.ul`
   font-size: 0.8rem;
 `
 
-/*
-const Link = styled.li`
-  padding: 3px 10px;
-  margin-left: 10px;
-`
-*/
-
 
 
 const Header = () => {
