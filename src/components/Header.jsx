@@ -1,5 +1,8 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import styled from 'styled-components'
+
+import LoginPage from '../pages/LoginPage'
 
 import logo from '../images/cactus.png'
 import title from '../images/title.png'
@@ -32,10 +35,13 @@ const List = styled.ul`
   list-style: none;
   font-size: 0.8rem;
 `
+
+/*
 const Link = styled.li`
   padding: 3px 10px;
   margin-left: 10px;
 `
+*/
 
 
 
@@ -43,14 +49,16 @@ const Header = () => {
   return(
     <div>
      <Head>
-       <Logo src={logo}/>
+       <Router>
+       <Logo src={logo} alt="logo"/>
        <Title src={title} />
        <Navigation>
          <List>
-           <Link>Log In</Link>
+           <Link to="/login" style={{textDecoration: 'none', color: 'black'}}>Log In</Link>
            
          </List>
        </Navigation>
+       </Router>
     </Head>
      
     </div>

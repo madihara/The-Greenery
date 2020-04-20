@@ -16,7 +16,6 @@ const Container = styled.div`
   padding: 0 3rem;
 
   @media screen and (max-width: 900px){
-    margin: 0;
     height: 100%;
     padding: 2rem 3rem;
   }
@@ -28,11 +27,23 @@ const Title = styled.h2`
   font-size: 6rem;
   text-transform: lowercase;
   line-height: 70px;
+
+  @media screen and (max-width: 900px){
+    max-width: none;
+  }
+
 `
 const Description = styled.p`
-  max-width: 40%;
+  max-width: 55%;
   min-width: 250px;
+  text-align: center;
+
+  @media screen and (max-width: 900px){
+    max-width: none;
+  }
+
 `
+
 
 
 const Card = ({ flexDirection, title, description, textAlign}) =>{
@@ -41,10 +52,11 @@ const Card = ({ flexDirection, title, description, textAlign}) =>{
     <Container
     style={{
       flexDirection: flexDirection,
-      textAlign: textAlign
     }}>
       
-        <Title>{title}</Title>
+        <Title style={{
+          textAlign: textAlign
+        }}>{title}</Title>
         <Description>{description}</Description>
     </Container>
     </Fade>

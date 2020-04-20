@@ -14,16 +14,16 @@ const SurveySection = styled.div`
 `
 
 const Button = styled.button`
-  height: 80px;
-  width: 300px;
+  height: 50px;
+  width: 200px;
   border-radius: 50px;
   background: #243A27;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   box-shadow: 0 0 4px 1px #848484;
 
   &:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `
 

@@ -19,7 +19,6 @@ const Title = styled.section`
   @media screen and (max-width: 874px) {
     font-size: 3rem;
     padding-top: 20%;
-  
   }
 `
 
@@ -74,7 +73,6 @@ const Hero = () => {
       <Arrow/>
     </ArrowBox>
   </Background>
-
   )
 }
 
